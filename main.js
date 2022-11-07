@@ -52,24 +52,24 @@
 
 
 // Reference type object
-let name = 'Lydia';
-let age = 30;
-let hobby = 'Reading';
+// let name = 'Lydia';
+// let age = 30;
+// let hobby = 'Reading';
 
-let user = {
-    name : 'Lydia',
-    age : 30,
-    hobby : 'Reading',
-}
-console.log(user);
-// To display single property using dot notation
-console.log(user.name);
-console.log(user.age);
+// let user = {
+//     name : 'Lydia',
+//     age : 30,
+//     hobby : 'Reading',
+// }
+// console.log(user);
+// // To display single property using dot notation
+// console.log(user.name);
+// console.log(user.age);
 
-// To display single property using bracket notation
-console.log(user['hobby']);
-console.log(user['age']);
-console.log(user['name']);
+// // To display single property using bracket notation
+// console.log(user['hobby']);
+// console.log(user['age']);
+// console.log(user['name']);
 
 
 
