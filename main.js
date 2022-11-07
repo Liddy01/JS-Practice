@@ -74,3 +74,18 @@
 
 
 
+
+
+
+// JS Array
+let friends = ['Emma', 'Hossy', 'Bryan'] 
+console.log(friends);
+// Arrays starts with 0
+console.log(friends[0]);
+console.log(friends[2]);
+
+console.log(typeof friends);
+console.log(friends.length);
+
+
+
