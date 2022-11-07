@@ -89,3 +89,59 @@
 
 
 
+
+
+
+
+
+// JS Function
+function showMyName(){
+    console.log('My name is Lydia');
+}
+showMyName();
+showMyName();
+
+function showMySurname(name){
+    console.log(name);
+}
+showMySurname('Lee');
+showMySurname('Nazzy');
+showMySurname('Jane');
+
+
+function showMyNickname(name){
+    console.log('My name is ' + name);
+}
+showMyNickname('Lizzy');
+showMyNickname('Nazzy');
+showMyNickname('Rapoo');
+
+let num1 = 30;
+let num2 = 20;
+let sum = num1 + num2;
+let minus = num1 - num2;
+let multiplication = num1 * num2;
+
+console.log(sum);
+console.log(minus);
+console.log(multiplication);
+
+function calcSum(num1,num2) {
+    const sum = num1 + num2;
+    return sum;
+}
+const result = calcSum(30,30);
+console.log(result);
+
+
+function calcMinus(num1,num2) {
+    const minus = num1 - num2;
+    return minus;
+}
+const output = calcMinus(30,30);
+console.log(output );
+
+
+
+
+
