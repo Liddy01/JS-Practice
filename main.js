@@ -145,3 +145,26 @@
 
 
 
+
+
+
+
+// Template Literals
+let name = 'Lydia';
+console.log('My name is ' + name);
+
+let Surname = 'Stephen';
+console.log(`my Surname is ${Surname} `);
+console.log(`${ 20 + 30}`);
+console.log(`${ name + Surname}`);
+
+let message = 'my name is \nkazi ariyan';
+console.log(message);
+
+let myName = `my name is 
+lydia`;
+console.log(myName);
+
+
+
+
