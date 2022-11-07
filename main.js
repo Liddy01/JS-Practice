@@ -168,3 +168,25 @@
 
 
 
+
+
+// Exercise
+let person = {
+    name: 'Lydia',
+    age: 40,
+    isMarried: true, 
+    homeAddress: {
+        long: 44.55,
+        lat: 33.44,
+    },
+    friends : ['Lee', 'Rap', 'Presh', 'Leo'],
+};
+console.log(person);
+console.log(person.name);
+console.log(person.homeAddress.lat);
+console.log(person.friends[1]);
+
+
+
+
+
