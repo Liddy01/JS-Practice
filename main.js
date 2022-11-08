@@ -402,3 +402,31 @@
 //         console.log('This is red');
 //         break;
 // }
+
+
+
+
+
+
+
+
+// // Conditional Statement 
+// Ternary Operator
+
+let num1 = 10;
+let num2 = 2;
+
+let maxValue;
+if(num1 > num2){
+    maxValue = num1;
+}else{
+    maxValue = num2;
+}
+
+let max = num1 > num2 ? num1 : num2;
+console.log(maxValue);
+console.log(max);
+
+
+
+
