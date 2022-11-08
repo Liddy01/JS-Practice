@@ -280,6 +280,39 @@
 
 
 
+// Equality Operators
+
+let price = 10;
+
+console.log(price === 10);
+console.log(price !== 10);
+
+console.log(price == 10);
+console.log(price != 10);
+
+console.log(price === '10');
+
+
+
+
+
+// Problem: Swap two numbers
+
+let apple = 10;
+let orange = 20;
+apple = orange;
+orange = apple;
+console.log(apple, orange);
+
+let guava = 10;
+let kiwi = 20;
+let temp = guava
+
+guava = kiwi;
+kiwi = temp;
+console.log(guava, kiwi);
+
+
 
 
 
