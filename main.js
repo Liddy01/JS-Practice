@@ -245,5 +245,45 @@
 
 
 
+// Comparison Operator
+// < > <= >= === !==
+
+let price = 200;
+
+console.log(price > 300);
+console.log(price >= 200);
+console.log(price < 100);
+console.log(price <= 500);
+console.log(price === 500);
+console.log(price !== 500);
+
+
+
+
+
+
+// Logical Operator
+// and(&&), or(||), not(!)
+
+let goods = 10;
+console.log(goods > 5 && goods < 15);
+// true && true
+
+console.log(goods > 50 || goods < 20);
+
+console.log(!(goods > 50));
+console.log(!(goods > 5));
+
+
+
+
+
+
+
+
+
+
+
+
 
 
