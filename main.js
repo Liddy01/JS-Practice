@@ -318,5 +318,87 @@
 
 
 
+// Conditional Statements
+// if(condition1){
+//     statements
+// }else if(condition2){
+//     statements
+// }else if(condition3){
+//     statements
+// } else{
+
+// }
 
 
+let number = 10;
+
+if(number > 0){
+    console.log('This is a positive number')
+}else if(number < 0){
+    console.log('This is a negative number')
+}else{
+    console.log('This is a zero number')
+
+}
+
+
+let digit = -10;
+
+if(digit > 0){
+    console.log('This is a positive number')
+}else if(digit < 0){
+    console.log('This is a negative number')
+}else{
+    console.log('This is a zero number')
+
+}
+
+
+let numeric = 0;
+
+if(numeric > 0){
+    console.log('This is a positive number')
+}else if(numeric < 0){
+    console.log('This is a negative number')
+}else{
+    console.log('This is a zero number')
+
+}
+
+
+
+
+
+
+// Conditional Statement 
+// Switch case
+
+let color = 'black';
+
+switch (color){
+    case 'black':
+        console.log('This is black');
+
+    case 'white':
+        console.log('This is white');
+
+    case 'red':
+        console.log('This is red');
+}
+
+
+let col = 'black';
+
+switch (col){
+    case 'black':
+        console.log('This is black');
+        break;
+
+    case 'white':
+        console.log('This is white');
+        break;
+
+    case 'red':
+        console.log('This is red');
+        break;
+}
