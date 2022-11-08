@@ -440,74 +440,134 @@
 // If it is divisible by both 3 & 5, Print Fizzbuzz 
 // Otherwise print Nothing. 
 
-let number = 10;
-if(number % 3 === 0 && number % 5 === 0){
-    console.log('Fizzbuzz');
-}
-else if(number % 3 === 0){
-    console.log('Fizz')
+// let number = 10;
+// if(number % 3 === 0 && number % 5 === 0){
+//     console.log('Fizzbuzz');
+// }
+// else if(number % 3 === 0){
+//     console.log('Fizz')
 
-} 
-else if(number % 5 === 0){
-    console.log('Buzz')
+// } 
+// else if(number % 5 === 0){
+//     console.log('Buzz')
 
-}
-else{
-    console.log('Nothing')
+// }
+// else{
+//     console.log('Nothing')
     
-}
+// }
 
 
-let Number = 15;
-if(Number % 3 === 0 && Number % 5 === 0){
-    console.log('Fizzbuzz');
-}
-else if(Number % 3 === 0){
-    console.log('Fizz')
+// let Number = 15;
+// if(Number % 3 === 0 && Number % 5 === 0){
+//     console.log('Fizzbuzz');
+// }
+// else if(Number % 3 === 0){
+//     console.log('Fizz')
 
-} 
-else if(Number % 5 === 0){
-    console.log('Buzz')
+// } 
+// else if(Number % 5 === 0){
+//     console.log('Buzz')
 
-}
-else{
-    console.log('Nothing')
+// }
+// else{
+//     console.log('Nothing')
     
-}
+// }
 
 
-let count = 16;
-if(count % 3 === 0 && count % 5 === 0){
-    console.log('Fizzbuzz');
-}
-else if(count % 3 === 0){
-    console.log('Fizz')
+// let count = 16;
+// if(count % 3 === 0 && count % 5 === 0){
+//     console.log('Fizzbuzz');
+// }
+// else if(count % 3 === 0){
+//     console.log('Fizz')
 
-} 
-else if(count % 5 === 0){
-    console.log('Buzz')
+// } 
+// else if(count % 5 === 0){
+//     console.log('Buzz')
 
-}
-else{
-    console.log('Nothing')
+// }
+// else{
+//     console.log('Nothing')
     
+// }
+
+
+// // Fizzbuzz exercise using ternary operator
+// let digit = 16;
+// console.log(
+// digit % 3 === 0 && digit % 5 === 0
+// ? 'Fizzbuzz'
+// :digit % 3 === 0
+// ? 'Fizz'
+// :digit % 5 === 0
+// ? 'Buzz'
+// : 'Nothing'
+// );
+
+
+
+
+
+
+
+// Grading system 
+// Take a Number
+// If the mark is in between 80-100, print "A+"
+// If the mark is in between 70-79, print "A+" 
+// If the mark is in between 60-69, print "A-" 
+// If the mark is in between 50-59, print "B" 
+// If the mark is in between 40-49, print "C" 
+// If the mark is in between 33-49, print "D" 
+// If the mark is in between 0-32, print "F" 
+// Also point out the invalid marks
+
+
+let mark = 90;
+
+if(mark >=80 && mark<=100){
+    console.log('A+');
+}else if(mark >= 70 && mark <= 79){
+    console.log('A');
+
+}else if(mark >= 60 && mark <= 69){
+    console.log('A-');
+}else if(mark >= 50 && mark <= 59){
+    console.log('B');
+}else if(mark >= 40 && mark <= 49){
+    console.log('BC');
+}else if(mark >= 33 && mark <= 39){
+    console.log('D');
+
+}else if(mark >= 0 && mark <= 32){
+    console.log('F');
+}else{
+    console.log('Invalid mark')
 }
 
 
-// Fizzbuzz exercise using ternary operator
-let digit = 16;
-console.log(
-digit % 3 === 0 && digit % 5 === 0
-? 'Fizzbuzz'
-:digit % 3 === 0
-? 'Fizz'
-:digit % 5 === 0
-? 'Buzz'
-: 'Nothing'
-);
 
 
+// Grading system 
+// Switch case with multiple logical operators
+// Take a Number
+// number > 0
+// number === 0
+// number < 0
 
+let grade = 1;
 
+switch(true){
+    case grade > 0:
+    console.log('This is a postive number');
+    break;
 
+    case grade === 0:
+    console.log('This is a zero number');
+    break; 
 
+    case grade < 0:
+    console.log('This is a negative number');
+    break;
+}
