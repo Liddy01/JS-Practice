@@ -330,75 +330,75 @@
 // }
 
 
-let number = 10;
+// let number = 10;
 
-if(number > 0){
-    console.log('This is a positive number')
-}else if(number < 0){
-    console.log('This is a negative number')
-}else{
-    console.log('This is a zero number')
+// if(number > 0){
+//     console.log('This is a positive number')
+// }else if(number < 0){
+//     console.log('This is a negative number')
+// }else{
+//     console.log('This is a zero number')
 
-}
-
-
-let digit = -10;
-
-if(digit > 0){
-    console.log('This is a positive number')
-}else if(digit < 0){
-    console.log('This is a negative number')
-}else{
-    console.log('This is a zero number')
-
-}
+// }
 
 
-let numeric = 0;
+// let digit = -10;
 
-if(numeric > 0){
-    console.log('This is a positive number')
-}else if(numeric < 0){
-    console.log('This is a negative number')
-}else{
-    console.log('This is a zero number')
+// if(digit > 0){
+//     console.log('This is a positive number')
+// }else if(digit < 0){
+//     console.log('This is a negative number')
+// }else{
+//     console.log('This is a zero number')
 
-}
+// }
 
 
+// let numeric = 0;
+
+// if(numeric > 0){
+//     console.log('This is a positive number')
+// }else if(numeric < 0){
+//     console.log('This is a negative number')
+// }else{
+//     console.log('This is a zero number')
+
+// }
 
 
 
 
-// Conditional Statement 
-// Switch case
-
-let color = 'black';
-
-switch (color){
-    case 'black':
-        console.log('This is black');
-
-    case 'white':
-        console.log('This is white');
-
-    case 'red':
-        console.log('This is red');
-}
 
 
-let col = 'black';
+// // Conditional Statement 
+// // Switch case
 
-switch (col){
-    case 'black':
-        console.log('This is black');
-        break;
+// let color = 'black';
 
-    case 'white':
-        console.log('This is white');
-        break;
+// switch (color){
+//     case 'black':
+//         console.log('This is black');
 
-    case 'red':
-        console.log('This is red');
-        break;
-}
+//     case 'white':
+//         console.log('This is white');
+
+//     case 'red':
+//         console.log('This is red');
+// }
+
+
+// let col = 'black';
+
+// switch (col){
+//     case 'black':
+//         console.log('This is black');
+//         break;
+
+//     case 'white':
+//         console.log('This is white');
+//         break;
+
+//     case 'red':
+//         console.log('This is red');
+//         break;
+// }
