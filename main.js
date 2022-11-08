@@ -430,3 +430,84 @@
 
 
 
+
+
+
+// Problem : FizzBuzz
+// Take a Number
+// If it is divisible by 3, Print Fizz 
+// If it is divisible by 5, Print Buzz 
+// If it is divisible by both 3 & 5, Print Fizzbuzz 
+// Otherwise print Nothing. 
+
+let number = 10;
+if(number % 3 === 0 && number % 5 === 0){
+    console.log('Fizzbuzz');
+}
+else if(number % 3 === 0){
+    console.log('Fizz')
+
+} 
+else if(number % 5 === 0){
+    console.log('Buzz')
+
+}
+else{
+    console.log('Nothing')
+    
+}
+
+
+let Number = 15;
+if(Number % 3 === 0 && Number % 5 === 0){
+    console.log('Fizzbuzz');
+}
+else if(Number % 3 === 0){
+    console.log('Fizz')
+
+} 
+else if(Number % 5 === 0){
+    console.log('Buzz')
+
+}
+else{
+    console.log('Nothing')
+    
+}
+
+
+let count = 16;
+if(count % 3 === 0 && count % 5 === 0){
+    console.log('Fizzbuzz');
+}
+else if(count % 3 === 0){
+    console.log('Fizz')
+
+} 
+else if(count % 5 === 0){
+    console.log('Buzz')
+
+}
+else{
+    console.log('Nothing')
+    
+}
+
+
+// Fizzbuzz exercise using ternary operator
+let digit = 16;
+console.log(
+digit % 3 === 0 && digit % 5 === 0
+? 'Fizzbuzz'
+:digit % 3 === 0
+? 'Fizz'
+:digit % 5 === 0
+? 'Buzz'
+: 'Nothing'
+);
+
+
+
+
+
+
