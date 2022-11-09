@@ -524,50 +524,147 @@
 // Also point out the invalid marks
 
 
-let mark = 90;
+// let mark = 90;
 
-if(mark >=80 && mark<=100){
-    console.log('A+');
-}else if(mark >= 70 && mark <= 79){
-    console.log('A');
+// if(mark >=80 && mark<=100){
+//     console.log('A+');
+// }else if(mark >= 70 && mark <= 79){
+//     console.log('A');
 
-}else if(mark >= 60 && mark <= 69){
-    console.log('A-');
-}else if(mark >= 50 && mark <= 59){
-    console.log('B');
-}else if(mark >= 40 && mark <= 49){
-    console.log('BC');
-}else if(mark >= 33 && mark <= 39){
-    console.log('D');
+// }else if(mark >= 60 && mark <= 69){
+//     console.log('A-');
+// }else if(mark >= 50 && mark <= 59){
+//     console.log('B');
+// }else if(mark >= 40 && mark <= 49){
+//     console.log('BC');
+// }else if(mark >= 33 && mark <= 39){
+//     console.log('D');
 
-}else if(mark >= 0 && mark <= 32){
-    console.log('F');
-}else{
-    console.log('Invalid mark')
+// }else if(mark >= 0 && mark <= 32){
+//     console.log('F');
+// }else{
+//     console.log('Invalid mark')
+// }
+
+
+
+
+// // Grading system 
+// // Switch case with multiple logical operators
+// // Take a Number
+// // number > 0
+// // number === 0
+// // number < 0
+
+// let grade = 1;
+
+// switch(true){
+//     case grade > 0:
+//     console.log('This is a postive number');
+//     break;
+
+//     case grade === 0:
+//     console.log('This is a zero number');
+//     break; 
+
+//     case grade < 0:
+//     console.log('This is a negative number');
+//     break;
+// }
+
+
+
+
+
+// Loops
+// For loop
+
+console.log('Hi my name is Ariyan');
+console.log('Hi my name is Ariyan');
+console.log('Hi my name is Ariyan');
+console.log('Hi my name is Ariyan');
+
+for(let index = 1; index <= 5; index++){
+    console.log('Hi I am Jovita',index);
+}
+
+for(let index = 1; index <= 3; index++){
+    console.log('goodbye everyone', index)
+}
+
+for(let index = 5; index >= 1; index--){
+    console.log('Hi I am Jovita',index);
 }
 
 
 
 
-// Grading system 
-// Switch case with multiple logical operators
-// Take a Number
-// number > 0
-// number === 0
-// number < 0
-
-let grade = 1;
-
-switch(true){
-    case grade > 0:
-    console.log('This is a postive number');
-    break;
-
-    case grade === 0:
-    console.log('This is a zero number');
-    break; 
-
-    case grade < 0:
-    console.log('This is a negative number');
-    break;
+// While loop
+let index = 1;
+while(index <= 5){
+    console.log('Hi Steve', index)
+    index++;
 }
+
+let box = 3;
+while(box >= 1){
+    console.log('Hi Steve', box)
+    box--;
+}
+
+
+
+
+// Do while loop
+let service = 1;
+do{
+    console.log('Hey you',service);
+    service++;
+} while(service <= 5);
+
+
+
+
+// For in loop
+const objs = {
+    name : 'Grace',
+    age : 10,
+}
+
+for (let key in objs){
+    console.log(key, objs[key])
+}
+
+
+let numbers = [1,2,3,4,5];
+console.log(numbers);
+
+for (let index in numbers){
+    console.log(index, );
+}
+
+let counts = [1,2,3,4,5];
+console.log(counts);
+
+for (let index in counts){
+    console.log(index,counts[index]);
+}
+
+
+
+// For of loop
+let digits = [1,2,3,4,5,6];
+console.log(digits);
+
+for (let index in digits){
+    console.log(index);
+}
+
+for (let num of digits){
+    console.log(num);
+}
+
+
+
+// Break & Continue
+
