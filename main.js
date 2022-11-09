@@ -672,40 +672,47 @@
 
 // Break & Continue
 
-for (let index = 1; index <=20; index++){
-    console.log(index);
+// for (let index = 1; index <=20; index++){
+//     console.log(index);
 
-    if (index === 10){
-        break;
-    }
+//     if (index === 10){
+//         break;
+//     }
 
-}
-
-
-for (let index = 1; index <=20; index++){
-    if (index === 10){
-        break;
-    }
-    console.log(index);
-
-}
-
-for (let index = 1; index <=20; index++){
-    if (index === 10){
-        continue;
-    }
-    console.log(index);
-
-}
+// }
 
 
+// for (let index = 1; index <=20; index++){
+//     if (index === 10){
+//         break;
+//     }
+//     console.log(index);
+
+// }
+
+// for (let index = 1; index <=20; index++){
+//     if (index === 10){
+//         continue;
+//     }
+//     console.log(index);
+
+// }
 
 
-// Infinite loop
-for (let index = 1; ; index++){
-    console.log(index);
-}
+
+
+// // Infinite loop
+// for (let index = 1; ; index++){
+//     console.log(index);
+// }
 
 
 
 // Nested loop
+
+for (let ariyan = 1; ariyan <= 3; ariyan++){
+
+    for(let kazi = 1; kazi<=3; kazi++){
+        console.log(ariyan,kazi);
+    }
+}
