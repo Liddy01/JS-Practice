@@ -710,9 +710,160 @@
 
 // Nested loop
 
-for (let ariyan = 1; ariyan <= 3; ariyan++){
+// for (let ariyan = 1; ariyan <= 3; ariyan++){
 
-    for(let kazi = 1; kazi<=3; kazi++){
-        console.log(ariyan,kazi);
-    }
-}
+//     for(let kazi = 1; kazi<=3; kazi++){
+//         console.log(ariyan,kazi);
+//     }
+// }
+
+
+
+
+
+
+
+
+// String
+// Basics
+let country = 'India';
+console.log(country);
+console.log(typeof country);
+
+console.log(country[2]);
+console.log(country.charAt(2));
+
+console.log(country[7]);
+console.log(country.charAt(7));
+
+
+
+// Strings Method charAt to uppercase, lowercase
+
+let message = 'My name is Lydia';
+console.log(message);
+console.log(message.charAt(1));
+console.log(message.toUpperCase());
+console.log(message.toLowerCase());
+
+// To find out if a particular name is included
+console.log(message.includes('Steve'));
+console.log(message.includes('name'));
+console.log(message.includes('lydia'));
+console.log(message.includes('Lydia'));
+
+console.log(message.startsWith('Lydia'));
+console.log(message.startsWith('My'));
+
+console.log(message.endsWith('Lydia'));
+console.log(message.endsWith('My'));
+
+
+
+// search, indexOf and lastIndexOf
+let definiton = 'Hi My name is Hi Lydia';
+console.log(definiton);
+console.log(definiton.search('Hi'));
+console.log(definiton.indexOf('Hi'));
+console.log(definiton.lastIndexOf('Hi'));
+
+
+
+
+// Strings Method toString, Concat and Split
+let myName = 'Hi My name is Hi Lydia';
+let temp = 123;
+console.log(typeof(temp));
+console.log(temp.toString());
+console.log(typeof temp.toString());
+
+let isMarried = false;
+console.log(typeof isMarried.toString());
+
+let numbers = [1,2,3,4,5];
+console.log(numbers);
+console.log(typeof numbers.toString());
+
+
+// Concat
+let News = "The Lord is always good to me";
+
+let N1= 'The Lord';
+let N2= ' is always';
+let N3 = ' good to me';
+let N = N1.concat(N2, N3);
+console.log(N);
+
+let letter = "The Lord is always good to me";
+
+let l1= 'The Lord';
+let l2= ' is always';
+let l3 = ' good to me';
+let l = l1 + l2 + l3;
+console.log(l)
+
+
+// Split
+let heading = 'My name is Nenye Lydia';
+console.log(heading.split(' '));
+console.log(heading.split(''));
+
+
+
+
+
+// Strings Method slice, substring
+
+// Slice
+let text = 'Hi my name is Nenye Lydia';
+console.log(text.slice(0,4));
+console.log(text.slice(0,5));
+console.log(text.slice(6,12));
+console.log(text.slice(2));
+console.log(text.slice());
+console.log(text.slice(0));
+console.log(text.slice(-12,-1));
+
+
+// Substring used as slice
+console.log(text.substring(0,3));
+console.log(text.substr(0,3));
+
+
+
+
+
+// Escape Sequences
+// Hi Lydia "It's a nice course" (publish it)
+// How are you? (add this in another line)
+
+let subject = 'Hi Lydia "It\'s a nice course".\nHow are you?';
+console.log(subject);
+
+let Guest = '\tThank you for coming\\attending our wedding.\nWe appreciate "your presence".\nIt\'s overwhelming.'
+console.log(Guest)
+
+
+
+
+
+// String Immutability
+// [strings cannot be changed but reassigned]
+let greeting = 'Ji Nenye';
+greeting[0] = 'H';
+console.log(greeting);
+
+let course = 'Ji Nenye';
+course = 'Hi Nenye'
+course = 'Hi Nenye ' + 'how are you'
+console.log(course)
+
+
+let chat = 'Hi Nenye';
+chat = chat + ' \nhow are you'
+console.log(chat)
+
+
+
+
+
