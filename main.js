@@ -871,26 +871,52 @@
 
 // Javascript Objects
 // Dot bracket notation
-let name = 'Gift';
-let age = 20;
-let hobby = 'hiking';
-let user = {name, age, hobby};
-console.log(user);
+// let name = 'Gift';
+// let age = 20;
+// let hobby = 'hiking';
+// let user = {name, age, hobby};
+// console.log(user);
 
-const profile = {
-    name: 'Gift',
-    age: 20,
-    hobby: 'hiking',  
+// const profile = {
+//     name: 'Gift',
+//     age: 20,
+//     hobby: 'hiking',  
 
-}
-console.log(profile);
-console.log(profile.hobby);
-console.log(profile['age']);
+// }
+// console.log(profile);
+// console.log(profile.hobby);
+// console.log(profile['age']);
+
 
 
 // Adding, Modifying, deleting properties
 
+// ADD
+const user = {
+        name: 'Gift',
+        age: 20,
+        hobby: 'hiking',  
+        isMarried: true
+    
+    }
 
+    user.email = 'lydia@gmail.com';
+    user.phone = '07067570982';
+    user['telephone'] = '08064076389';
+    user['1-asd phone'] = '080640455689';
+
+let key = '2-asd tel';
+user[key] = 'hjdjhkfjkkkkkkh'
+
+// UPDATE
+user.isMarried = false;
+user.age=user.age + 5;
+
+
+
+// Delete
+delete user.age;
+console.log(user);
 
 
 
