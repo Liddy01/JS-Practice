@@ -922,5 +922,19 @@
 
 
 
+// Object Methods and "This" keyword
+
+const user = {
+    name: 'Frank',
+    age: 30,
+    isMarried: true,
+    friends: ['Praise', 'Leo', 'Tina'],
+    selectColor: null,
+    calculateAge: function(){
+        console.log(`I am ${this.age} Frank Steve`);
+    }
+};
+user.calculateAge();
+
 
 
