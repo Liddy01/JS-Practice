@@ -726,142 +726,171 @@
 
 // String
 // Basics
-let country = 'India';
-console.log(country);
-console.log(typeof country);
+// let country = 'India';
+// console.log(country);
+// console.log(typeof country);
 
-console.log(country[2]);
-console.log(country.charAt(2));
+// console.log(country[2]);
+// console.log(country.charAt(2));
 
-console.log(country[7]);
-console.log(country.charAt(7));
-
-
-
-// Strings Method charAt to uppercase, lowercase
-
-let message = 'My name is Lydia';
-console.log(message);
-console.log(message.charAt(1));
-console.log(message.toUpperCase());
-console.log(message.toLowerCase());
-
-// To find out if a particular name is included
-console.log(message.includes('Steve'));
-console.log(message.includes('name'));
-console.log(message.includes('lydia'));
-console.log(message.includes('Lydia'));
-
-console.log(message.startsWith('Lydia'));
-console.log(message.startsWith('My'));
-
-console.log(message.endsWith('Lydia'));
-console.log(message.endsWith('My'));
+// console.log(country[7]);
+// console.log(country.charAt(7));
 
 
 
-// search, indexOf and lastIndexOf
-let definiton = 'Hi My name is Hi Lydia';
-console.log(definiton);
-console.log(definiton.search('Hi'));
-console.log(definiton.indexOf('Hi'));
-console.log(definiton.lastIndexOf('Hi'));
+// // Strings Method charAt to uppercase, lowercase
+
+// let message = 'My name is Lydia';
+// console.log(message);
+// console.log(message.charAt(1));
+// console.log(message.toUpperCase());
+// console.log(message.toLowerCase());
+
+// // To find out if a particular name is included
+// console.log(message.includes('Steve'));
+// console.log(message.includes('name'));
+// console.log(message.includes('lydia'));
+// console.log(message.includes('Lydia'));
+
+// console.log(message.startsWith('Lydia'));
+// console.log(message.startsWith('My'));
+
+// console.log(message.endsWith('Lydia'));
+// console.log(message.endsWith('My'));
 
 
 
-
-// Strings Method toString, Concat and Split
-let myName = 'Hi My name is Hi Lydia';
-let temp = 123;
-console.log(typeof(temp));
-console.log(temp.toString());
-console.log(typeof temp.toString());
-
-let isMarried = false;
-console.log(typeof isMarried.toString());
-
-let numbers = [1,2,3,4,5];
-console.log(numbers);
-console.log(typeof numbers.toString());
-
-
-// Concat
-let News = "The Lord is always good to me";
-
-let N1= 'The Lord';
-let N2= ' is always';
-let N3 = ' good to me';
-let N = N1.concat(N2, N3);
-console.log(N);
-
-let letter = "The Lord is always good to me";
-
-let l1= 'The Lord';
-let l2= ' is always';
-let l3 = ' good to me';
-let l = l1 + l2 + l3;
-console.log(l)
-
-
-// Split
-let heading = 'My name is Nenye Lydia';
-console.log(heading.split(' '));
-console.log(heading.split(''));
+// // search, indexOf and lastIndexOf
+// let definiton = 'Hi My name is Hi Lydia';
+// console.log(definiton);
+// console.log(definiton.search('Hi'));
+// console.log(definiton.indexOf('Hi'));
+// console.log(definiton.lastIndexOf('Hi'));
 
 
 
 
+// // Strings Method toString, Concat and Split
+// let myName = 'Hi My name is Hi Lydia';
+// let temp = 123;
+// console.log(typeof(temp));
+// console.log(temp.toString());
+// console.log(typeof temp.toString());
 
-// Strings Method slice, substring
+// let isMarried = false;
+// console.log(typeof isMarried.toString());
 
-// Slice
-let text = 'Hi my name is Nenye Lydia';
-console.log(text.slice(0,4));
-console.log(text.slice(0,5));
-console.log(text.slice(6,12));
-console.log(text.slice(2));
-console.log(text.slice());
-console.log(text.slice(0));
-console.log(text.slice(-12,-1));
+// let numbers = [1,2,3,4,5];
+// console.log(numbers);
+// console.log(typeof numbers.toString());
 
 
-// Substring used as slice
-console.log(text.substring(0,3));
-console.log(text.substr(0,3));
+// // Concat
+// let News = "The Lord is always good to me";
+
+// let N1= 'The Lord';
+// let N2= ' is always';
+// let N3 = ' good to me';
+// let N = N1.concat(N2, N3);
+// console.log(N);
+
+// let letter = "The Lord is always good to me";
+
+// let l1= 'The Lord';
+// let l2= ' is always';
+// let l3 = ' good to me';
+// let l = l1 + l2 + l3;
+// console.log(l)
+
+
+// // Split
+// let heading = 'My name is Nenye Lydia';
+// console.log(heading.split(' '));
+// console.log(heading.split(''));
 
 
 
 
 
-// Escape Sequences
-// Hi Lydia "It's a nice course" (publish it)
-// How are you? (add this in another line)
+// // Strings Method slice, substring
 
-let subject = 'Hi Lydia "It\'s a nice course".\nHow are you?';
-console.log(subject);
-
-let Guest = '\tThank you for coming\\attending our wedding.\nWe appreciate "your presence".\nIt\'s overwhelming.'
-console.log(Guest)
-
-
-
-
-
-// String Immutability
-// [strings cannot be changed but reassigned]
-let greeting = 'Ji Nenye';
-greeting[0] = 'H';
-console.log(greeting);
-
-let course = 'Ji Nenye';
-course = 'Hi Nenye'
-course = 'Hi Nenye ' + 'how are you'
-console.log(course)
+// // Slice
+// let text = 'Hi my name is Nenye Lydia';
+// console.log(text.slice(0,4));
+// console.log(text.slice(0,5));
+// console.log(text.slice(6,12));
+// console.log(text.slice(2));
+// console.log(text.slice());
+// console.log(text.slice(0));
+// console.log(text.slice(-12,-1));
 
 
-let chat = 'Hi Nenye';
-chat = chat + ' \nhow are you'
-console.log(chat)
+// // Substring used as slice
+// console.log(text.substring(0,3));
+// console.log(text.substr(0,3));
+
+
+
+
+
+// // Escape Sequences
+// // Hi Lydia "It's a nice course" (publish it)
+// // How are you? (add this in another line)
+
+// let subject = 'Hi Lydia "It\'s a nice course".\nHow are you?';
+// console.log(subject);
+
+// let Guest = '\tThank you for coming\\attending our wedding.\nWe appreciate "your presence".\nIt\'s overwhelming.'
+// console.log(Guest)
+
+
+
+
+
+// // String Immutability
+// // [strings cannot be changed but reassigned]
+// let greeting = 'Ji Nenye';
+// greeting[0] = 'H';
+// console.log(greeting);
+
+// let course = 'Ji Nenye';
+// course = 'Hi Nenye'
+// course = 'Hi Nenye ' + 'how are you'
+// console.log(course)
+
+
+// let chat = 'Hi Nenye';
+// chat = chat + ' \nhow are you'
+// console.log(chat)
+
+
+
+
+
+
+
+// Javascript Objects
+// Dot bracket notation
+let name = 'Gift';
+let age = 20;
+let hobby = 'hiking';
+let user = {name, age, hobby};
+console.log(user);
+
+const profile = {
+    name: 'Gift',
+    age: 20,
+    hobby: 'hiking',  
+
+}
+console.log(profile);
+console.log(profile.hobby);
+console.log(profile['age']);
+
+
+// Adding, Modifying, deleting properties
+
+
 
 
 
