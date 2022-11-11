@@ -1088,16 +1088,21 @@
 
 const user = {
     name: 'Kazi',
-    age: 40
+    age: 40,
 };
 
-const copiedUser = {};
-copiedUser.name = user.name;
-copiedUser.age = user.age;
+// const copiedUser = {};
+// copiedUser.name = user.name;
+// copiedUser.age = user.age;
 
-for(let key in user){
-    console.log(key,user[key]);
+// for(let key in user){
+//     console.log(key,user[key]);
+// copiedUser[key] = user[key];
 
-}
+// }
 
+
+// Using another method
+
+const copiedUser = Object.assign({},user);
 console.log(copiedUser);
