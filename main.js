@@ -1119,14 +1119,66 @@
 
 // JSON DATA FORMAT[no addition of undefined value and function]
 
-const user = {
-    name: 'Kazi',
-    age : 40,
+// const user = {
+//     name: 'Kazi',
+//     age : 40,
+// }
+
+// // To change object to JSON  
+// const jsonData = JSON.stringify(user);
+
+// // To change JSON to object
+// console.log(JSON.parse(jsonData));
+// console.log(jsonData);
+
+
+
+
+
+
+
+
+// FUNCTIONS
+
+// Function Declaration
+
+function aboutMe() {
+    const message = `I am Lydia and I am 26 years old`;
+    console.log(message)
+    
 }
 
-// To change object to JSON  
-const jsonData = JSON.stringify(user);
+// Function Call
+aboutMe();
 
-// To change JSON to object
-console.log(JSON.parse(jsonData));
-console.log(jsonData);
+
+
+// Function Declaration
+function aboutMyself(name,age) {
+    const text = `I am ${name} and I am ${age} years old`;
+    console.log(text)
+    
+}
+
+// Function Call
+aboutMyself('Blessing',20);
+aboutMyself('Peace',18);
+
+
+let num1 = 20;
+let num2 = 30;
+add = num1 + num2
+console.log(add),
+ 
+
+
+
+function calcSum(number1,number2){
+    let sum = number1 + number2;
+return sum; 
+}
+
+let result = calcSum(10,20);
+console.log(result)
+
+
