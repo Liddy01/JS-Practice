@@ -1187,16 +1187,36 @@
 
 // Default Parametres
 
-function calcSum(number1,number2,number3){
-        let sum = number1 + number2 + number3;
-       return sum; 
- }
-console.log(calcSum(10,20,30));
+// function calcSum(number1,number2,number3){
+//         let sum = number1 + number2 + number3;
+//        return sum; 
+//  }
+// console.log(calcSum(10,20,30));
 
 
 
-function calcSum(num1,num2 = 40,num3 = 50){
-    let sum = num1 + num2 + num3;
-   return sum; 
-}
-console.log(calcSum(30));
+// function calcSum(num1,num2 = 40,num3 = 50){
+//     let sum = num1 + num2 + num3;
+//    return sum; 
+// }
+// console.log(calcSum(30));
+
+
+
+
+// Function Expression
+
+// Default Parametres
+function calcSum(number1,number2){
+        let sum = number1 + number2;
+    return sum; 
+    }
+    
+    console.log(calcSum(10,20));
+
+ // Function Expression
+    const calSumExp = function(number1,number2){
+        let sum = number1 + number2;
+        return sum;
+    }
+    console.log(calSumExp(50,60));
