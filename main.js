@@ -1086,10 +1086,10 @@
 
 // Cloning an Object
 
-const user = {
-    name: 'Kazi',
-    age: 40,
-};
+// const user = {
+//     name: 'Kazi',
+//     age: 40,
+// };
 
 // const copiedUser = {};
 // copiedUser.name = user.name;
@@ -1104,5 +1104,16 @@ const user = {
 
 // Using another method
 
-const copiedUser = Object.assign({},user);
-console.log(copiedUser);
+// const copiedUser = Object.assign({},user);
+// console.log(copiedUser);
+
+
+
+
+// Math Object
+console.log(Math.PI);
+console.log(Math.random());
+console.log(Math.round(4.9));
+
+
+
