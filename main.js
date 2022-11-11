@@ -939,41 +939,100 @@
 
 
 
-// Traversing Object
-const user = {
-    name: 'Frank',
-    age: 30,
-    gender:'Male',
-    phone: '3434343',
-    email:'lydia@gmail.com',
-};
+// // Traversing Object
+// const user = {
+//     name: 'Frank',
+//     age: 30,
+//     gender:'Male',
+//     phone: '3434343',
+//     email:'lydia@gmail.com',
+// };
 
-for(let key in user){
-    console.log(key);
+// for(let key in user){
+//     console.log(key);
+// }
+
+
+// // First way
+// const username = {
+//     name: 'Frank',
+//     age: 30,
+//     gender:'Male',
+//     phone: '3434343',
+//     email:'lydia@gmail.com',
+// };
+
+// for(let key in username){
+//     console.log(key, user[key]);
+// }
+
+// // Second way
+// console.log(Object.keys(user));
+// console.log(Object.values(user));
+
+// for(let val of Object.values(user)){
+//     console.log(val);
+// }
+
+
+
+
+// Exercise traversing Object
+
+
+const salaries = {
+    Joy: 2000,
+    Grace: 3000,
+    Leo: 4000,
+    Jcee: 5000,
+    Bless: 6000,
 }
 
+let sum = 0;
 
-// First way
-const username = {
-    name: 'Frank',
-    age: 30,
-    gender:'Male',
-    phone: '3434343',
-    email:'lydia@gmail.com',
-};
-
-for(let key in username){
-    console.log(key, user[key]);
+for(let key in salaries){
+    console.log(key, salaries[key]);
+    sum = sum + salaries[key];
 }
 
-// Second way
-console.log(Object.keys(user));
-console.log(Object.values(user));
+console.log(sum);
 
-for(let val of Object.values(user)){
-    console.log(val);
+
+
+const wages = {
+    Joy: 2000,
+    Grace: 3000,
+    Leo: 4000,
+    Jcee: 5000,
+    Bless: 6000,
 }
 
+let addition = 0;
+
+for(let key in salaries){
+    console.log(key, salaries[key]);
+    addition += salaries[key];
+}
+
+console.log(addition);
 
 
 
+
+
+const Rent = {
+    Bless: 7000,
+    Nenye: 11000,
+    Victor: 5000,
+    Emma: 5000,
+    Rapoo: 6000,
+}
+
+let total = 0;
+
+console.log(Object.values(Rent));
+
+for (let val of Object.values(Rent)){
+    total += val;
+}
+console.log(total);
