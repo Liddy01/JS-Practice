@@ -924,17 +924,56 @@
 
 // Object Methods and "This" keyword
 
+// const user = {
+//     name: 'Frank',
+//     age: 30,
+//     isMarried: true,
+//     friends: ['Praise', 'Leo', 'Tina'],
+//     selectColor: null,
+//     calculateAge: function(){
+//         console.log(`I am ${this.age} Frank Steve`);
+//     }
+// };
+// user.calculateAge();
+
+
+
+
+// Traversing Object
 const user = {
     name: 'Frank',
     age: 30,
-    isMarried: true,
-    friends: ['Praise', 'Leo', 'Tina'],
-    selectColor: null,
-    calculateAge: function(){
-        console.log(`I am ${this.age} Frank Steve`);
-    }
+    gender:'Male',
+    phone: '3434343',
+    email:'lydia@gmail.com',
 };
-user.calculateAge();
+
+for(let key in user){
+    console.log(key);
+}
+
+
+// First way
+const username = {
+    name: 'Frank',
+    age: 30,
+    gender:'Male',
+    phone: '3434343',
+    email:'lydia@gmail.com',
+};
+
+for(let key in username){
+    console.log(key, user[key]);
+}
+
+// Second way
+console.log(Object.keys(user));
+console.log(Object.values(user));
+
+for(let val of Object.values(user)){
+    console.log(val);
+}
+
 
 
 
