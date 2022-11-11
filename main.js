@@ -1229,17 +1229,42 @@
 
 
 // Arrow Function
-const calSumArr = (number1,number2) => number1 + number2;
-console.log(calSumArr(40,30));
+// const calSumArr = (number1,number2) => number1 + number2;
+// console.log(calSumArr(40,30));
 
 
 
-// Function Expression
-const mulByTwo = function(number1){
-    return number1 * 2;
+// // Function Expression
+// const mulByTwo = function(number1){
+//     return number1 * 2;
+// }
+// console.log(mulByTwo(6));
+
+// // Arrow Function
+// const mulByTwoArr = (number1) => number1 *2;
+// console.log(mulByTwoArr(6));
+
+
+
+
+
+
+
+// Rest Parametre
+function multiply(number1, number2, number3){
+    return number1 * number2 * number3;
 }
-console.log(mulByTwo(6));
+console.log(multiply(2,3,4));
 
-// Arrow Function
-const mulByTwoArr = (number1) => number1 *2;
-console.log(mulByTwoArr(6));
+// For multiple numbers
+function multiply(...args){
+    console.log(args);
+
+    let mulp = 1;
+    for (let num of args){
+        mulp = mulp * num;
+    }
+    return mulp;
+} 
+console.log(multiply(2,3,4,5,6));
+console.log(multiply(2,3,4,5,6,10,9,8,7));
