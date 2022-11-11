@@ -980,59 +980,105 @@
 // Exercise traversing Object
 
 
-const salaries = {
-    Joy: 2000,
-    Grace: 3000,
-    Leo: 4000,
-    Jcee: 5000,
-    Bless: 6000,
-}
+// const salaries = {
+//     Joy: 2000,
+//     Grace: 3000,
+//     Leo: 4000,
+//     Jcee: 5000,
+//     Bless: 6000,
+// }
 
-let sum = 0;
+// let sum = 0;
 
-for(let key in salaries){
-    console.log(key, salaries[key]);
-    sum = sum + salaries[key];
-}
+// for(let key in salaries){
+//     console.log(key, salaries[key]);
+//     sum = sum + salaries[key];
+// }
 
-console.log(sum);
-
-
-
-const wages = {
-    Joy: 2000,
-    Grace: 3000,
-    Leo: 4000,
-    Jcee: 5000,
-    Bless: 6000,
-}
-
-let addition = 0;
-
-for(let key in salaries){
-    console.log(key, salaries[key]);
-    addition += salaries[key];
-}
-
-console.log(addition);
+// console.log(sum);
 
 
 
+// const wages = {
+//     Joy: 2000,
+//     Grace: 3000,
+//     Leo: 4000,
+//     Jcee: 5000,
+//     Bless: 6000,
+// }
+
+// let addition = 0;
+
+// for(let key in salaries){
+//     console.log(key, salaries[key]);
+//     addition += salaries[key];
+// }
+
+// console.log(addition);
 
 
-const Rent = {
-    Bless: 7000,
-    Nenye: 11000,
-    Victor: 5000,
-    Emma: 5000,
-    Rapoo: 6000,
-}
 
-let total = 0;
 
-console.log(Object.values(Rent));
 
-for (let val of Object.values(Rent)){
-    total += val;
-}
-console.log(total);
+// const Rent = {
+//     Bless: 7000,
+//     Nenye: 11000,
+//     Victor: 5000,
+//     Emma: 5000,
+//     Rapoo: 6000,
+// }
+
+// let total = 0;
+
+// console.log(Object.values(Rent));
+
+// for (let val of Object.values(Rent)){
+//     total += val;
+// }
+// console.log(total);
+
+
+
+
+
+
+
+// Object Destructing
+const user = {
+    name: 'Victor',
+    age: 22,
+    favBook: {
+        bookname: 'Think and grow rich',
+        bookauthor: 'Zick',
+    },
+};
+console.log(user);
+console.log(user.age);
+console.log(user.favBook);
+console.log(user.favBook.bookname);
+console.log(user.favBook.bookauthor);
+
+
+const username = {
+    name: 'Victor',
+    age: 22,
+    favBook: {
+        bookname: 'Think and grow rich',
+        bookauthor: 'Zick',
+    },
+};
+
+// This is the Object destructuring---- const{name, age, favBook} = username.....
+const {name, age, favBook} = username; 
+const {bookname, bookauthor} = favBook;  
+
+
+console.log(username);
+console.log(username.age);
+console.log(username.favBook);
+console.log(username.favBook.bookname);
+console.log(username.favBook.bookauthor);
+
+
+
+
