@@ -1044,41 +1044,60 @@
 
 
 // Object Destructing
+// const user = {
+//     name: 'Victor',
+//     age: 22,
+//     favBook: {
+//         bookname: 'Think and grow rich',
+//         bookauthor: 'Zick',
+//     },
+// };
+// console.log(user);
+// console.log(user.age);
+// console.log(user.favBook);
+// console.log(user.favBook.bookname);
+// console.log(user.favBook.bookauthor);
+
+
+// const username = {
+//     name: 'Victor',
+//     age: 22,
+//     favBook: {
+//         bookname: 'Think and grow rich',
+//         bookauthor: 'Zick',
+//     },
+// };
+
+// // This is the Object destructuring---- const{name, age, favBook} = username.....
+// const {name, age, favBook} = username; 
+// const {bookname, bookauthor} = favBook;  
+
+
+// console.log(username);
+// console.log(username.age);
+// console.log(username.favBook);
+// console.log(username.favBook.bookname);
+// console.log(username.favBook.bookauthor);
+
+
+
+
+
+
+// Cloning an Object
+
 const user = {
-    name: 'Victor',
-    age: 22,
-    favBook: {
-        bookname: 'Think and grow rich',
-        bookauthor: 'Zick',
-    },
-};
-console.log(user);
-console.log(user.age);
-console.log(user.favBook);
-console.log(user.favBook.bookname);
-console.log(user.favBook.bookauthor);
-
-
-const username = {
-    name: 'Victor',
-    age: 22,
-    favBook: {
-        bookname: 'Think and grow rich',
-        bookauthor: 'Zick',
-    },
+    name: 'Kazi',
+    age: 40
 };
 
-// This is the Object destructuring---- const{name, age, favBook} = username.....
-const {name, age, favBook} = username; 
-const {bookname, bookauthor} = favBook;  
+const copiedUser = {};
+copiedUser.name = user.name;
+copiedUser.age = user.age;
 
+for(let key in user){
+    console.log(key,user[key]);
 
-console.log(username);
-console.log(username.age);
-console.log(username.favBook);
-console.log(username.favBook.bookname);
-console.log(username.favBook.bookauthor);
+}
 
-
-
-
+console.log(copiedUser);
