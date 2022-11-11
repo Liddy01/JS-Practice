@@ -1142,43 +1142,61 @@
 
 // Function Declaration
 
-function aboutMe() {
-    const message = `I am Lydia and I am 26 years old`;
-    console.log(message)
+// function aboutMe() {
+//     const message = `I am Lydia and I am 26 years old`;
+//     console.log(message)
     
-}
+// }
 
-// Function Call
-aboutMe();
+// // Function Call
+// aboutMe();
 
 
 
-// Function Declaration
-function aboutMyself(name,age) {
-    const text = `I am ${name} and I am ${age} years old`;
-    console.log(text)
+// // Function Declaration
+// function aboutMyself(name,age) {
+//     const text = `I am ${name} and I am ${age} years old`;
+//     console.log(text)
     
-}
+// }
 
-// Function Call
-aboutMyself('Blessing',20);
-aboutMyself('Peace',18);
+// // Function Call
+// aboutMyself('Blessing',20);
+// aboutMyself('Peace',18);
 
 
-let num1 = 20;
-let num2 = 30;
-add = num1 + num2
-console.log(add),
+// let num1 = 20;
+// let num2 = 30;
+// add = num1 + num2
+// console.log(add),
  
 
 
 
-function calcSum(number1,number2){
-    let sum = number1 + number2;
-return sum; 
+// function calcSum(number1,number2){
+//     let sum = number1 + number2;
+// return sum; 
+// }
+
+// let result = calcSum(10,20);
+// console.log(result)
+
+
+
+
+
+// Default Parametres
+
+function calcSum(number1,number2,number3){
+        let sum = number1 + number2 + number3;
+       return sum; 
+ }
+console.log(calcSum(10,20,30));
+
+
+
+function calcSum(num1,num2 = 40,num3 = 50){
+    let sum = num1 + num2 + num3;
+   return sum; 
 }
-
-let result = calcSum(10,20);
-console.log(result)
-
-
+console.log(calcSum(30));
