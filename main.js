@@ -1111,9 +1111,22 @@
 
 
 // Math Object
-console.log(Math.PI);
-console.log(Math.random());
-console.log(Math.round(4.9));
+// console.log(Math.PI);
+// console.log(Math.random());
+// console.log(Math.round(4.9));
 
 
 
+// JSON DATA FORMAT[no addition of undefined value and function]
+
+const user = {
+    name: 'Kazi',
+    age : 40,
+}
+
+// To change object to JSON  
+const jsonData = JSON.stringify(user);
+
+// To change JSON to object
+console.log(JSON.parse(jsonData));
+console.log(jsonData);
