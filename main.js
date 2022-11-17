@@ -1280,15 +1280,30 @@
 // JAVASCRIPT ARRAY
 
 // Array Basics
-let friends = ['Jesse', 'Zoba', 'Abdul', 'Rahab'];
-console.log(friends);
-console.log(friends[0]);
-console.log(friends[3]);
-console.log(friends[1]);
+// let friends = ['Jesse', 'Zoba', 'Abdul', 'Rahab'];
+// console.log(friends);
+// console.log(friends[0]);
+// console.log(friends[3]);
+// console.log(friends[1]);
 
-console.log(friends.length);
-
-
+// console.log(friends.length);
 
 
 
+
+// Adding Elements
+const numbers = [12,13,14,17,18];
+numbers.unshift(9, 10, 11);
+numbers.push(19, 20, 21);
+
+console.log(numbers);
+
+
+const num = [12,13,14,17,18];
+num.splice(3,0,15,16);
+
+console.log(num);
+
+
+
+// Removing Elements
