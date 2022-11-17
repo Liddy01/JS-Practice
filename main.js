@@ -1292,18 +1292,33 @@
 
 
 // Adding Elements
-const numbers = [12,13,14,17,18];
-numbers.unshift(9, 10, 11);
-numbers.push(19, 20, 21);
+// const numbers = [12,13,14,17,18];
+// numbers.unshift(9, 10, 11);
+// numbers.push(19, 20, 21);
 
-console.log(numbers);
+// console.log(numbers);
 
 
-const num = [12,13,14,17,18];
-num.splice(3,0,15,16);
+// const num = [12,13,14,17,18];
+// num.splice(3,0,15,16);
 
-console.log(num);
+// console.log(num);
 
 
 
 // Removing Elements
+const numbers = [1,2,3,4,5,6,7,8];
+numbers.shift();
+numbers.shift();
+numbers.shift();
+
+numbers.pop();
+numbers.pop();
+
+console.log(numbers);
+
+
+
+const num = [1,2,3,4,5,6,7,8];
+num.splice(2,3);
+console.log(num);
