@@ -1251,20 +1251,44 @@
 
 
 // Rest Parametre
-function multiply(number1, number2, number3){
-    return number1 * number2 * number3;
-}
-console.log(multiply(2,3,4));
+// function multiply(number1, number2, number3){
+//     return number1 * number2 * number3;
+// }
+// console.log(multiply(2,3,4));
 
-// For multiple numbers
-function multiply(...args){
-    console.log(args);
+// // For multiple numbers
+// function multiply(...args){
+//     console.log(args);
 
-    let mulp = 1;
-    for (let num of args){
-        mulp = mulp * num;
-    }
-    return mulp;
-} 
-console.log(multiply(2,3,4,5,6));
-console.log(multiply(2,3,4,5,6,10,9,8,7));
+//     let mulp = 1;
+//     for (let num of args){
+//         mulp = mulp * num;
+//     }
+//     return mulp;
+// } 
+// console.log(multiply(2,3,4,5,6));
+// console.log(multiply(2,3,4,5,6,10,9,8,7));
+
+
+
+
+
+
+
+
+
+// JAVASCRIPT ARRAY
+
+// Array Basics
+let friends = ['Jesse', 'Zoba', 'Abdul', 'Rahab'];
+console.log(friends);
+console.log(friends[0]);
+console.log(friends[3]);
+console.log(friends[1]);
+
+console.log(friends.length);
+
+
+
+
+
