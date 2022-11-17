@@ -1307,18 +1307,38 @@
 
 
 // Removing Elements
-const numbers = [1,2,3,4,5,6,7,8];
-numbers.shift();
-numbers.shift();
-numbers.shift();
+// const numbers = [1,2,3,4,5,6,7,8];
+// numbers.shift();
+// numbers.shift();
+// numbers.shift();
 
-numbers.pop();
-numbers.pop();
+// numbers.pop();
+// numbers.pop();
+
+// console.log(numbers);
+
+
+
+// const num = [1,2,3,4,5,6,7,8];
+// num.splice(2,3);
+// console.log(num);
+
+
+
+
+
+// Finding Element(Primitive type)
+const numbers = [1,2,3,2,5,6,2,8];
+console.log(numbers.includes(3));
+console.log(numbers.includes(3,4));
+console.log(numbers.includes(2));
+console.log(numbers.includes(300));
+
+console.log(numbers.indexOf(2));
+console.log(numbers.indexOf(3));
+console.log(numbers.lastIndexOf(2));
+
 
 console.log(numbers);
 
 
-
-const num = [1,2,3,4,5,6,7,8];
-num.splice(2,3);
-console.log(num);
