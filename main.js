@@ -1373,17 +1373,63 @@
 
 
 
-// Iterating in Array
-const numbers = [1,2,3,4,5];
+// // Iterating in Array
+// const numbers = [1,2,3,4,5];
 
-for (let index = 0; index < numbers.length; index++ ){
-    console.log(index, numbers[index]);
-}
+// for (let index = 0; index < numbers.length; index++ ){
+//     console.log(index, numbers[index]);
+// }
 
-for (let num of numbers){
-    console.log(num);
-}
+// for (let num of numbers){
+//     console.log(num);
+// }
 
-numbers.forEach(function(num, index){
-    console.log(num,index)
-})
+// numbers.forEach(function(num, index){
+//     console.log(num,index)
+// })
+
+
+
+
+
+
+
+// Sorting and Reversimg
+const numbers = [6,8,7,2,1,9];
+
+numbers.sort();
+numbers.reverse();
+
+console.log(numbers);
+
+let doctors = [
+    {name: 'Grace', age: 40},
+    {name: 'Jude', age: 30},
+
+];
+
+doctors.sort(function(d1,d2){
+    if (d1.age > d2.age) return +1;
+    if (d1.age === d2.age) return 0;
+    if (d1.age < d2.age) return -1;
+
+
+});
+console.log(doctors);
+
+
+
+let teachers = [
+    {name: 'Elvin', age: 50},
+    {name: 'Fred', age: 20},
+
+];
+
+teachers.sort(function(t1,t2){
+    if (t1.age > t2.age) return +1;
+    if (t1.age === t2.age) return 0;
+    if (t1.age < t2.age) return -1;
+
+
+}).reverse();
+console.log(teachers);
