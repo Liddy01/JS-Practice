@@ -1327,18 +1327,43 @@
 
 
 
-// Finding Element(Primitive type)
-const numbers = [1,2,3,2,5,6,2,8];
-console.log(numbers.includes(3));
-console.log(numbers.includes(3,4));
-console.log(numbers.includes(2));
-console.log(numbers.includes(300));
+// // Finding Element(Primitive type)
+// const numbers = [1,2,3,2,5,6,2,8];
+// console.log(numbers.includes(3));
+// console.log(numbers.includes(3,4));
+// console.log(numbers.includes(2));
+// console.log(numbers.includes(300));
 
-console.log(numbers.indexOf(2));
-console.log(numbers.indexOf(3));
-console.log(numbers.lastIndexOf(2));
+// console.log(numbers.indexOf(2));
+// console.log(numbers.indexOf(3));
+// console.log(numbers.lastIndexOf(2));
 
 
-console.log(numbers);
+// console.log(numbers);
 
+
+
+
+
+// Finding Element(Reference type)
+const doctors = [
+    {name: 'Jude', age: 20},
+    {name: 'Grace', age: 30},
+    {name: 'Chike', age: 40},
+];
+
+const result = doctors.find(function(doctor){
+    return doctor.name === 'Jude';
+});
+
+const outcome = doctors.find(function(doctor){
+    return doctor.age === 40;
+});
+
+const output = doctors.find(function(doctor){
+    return doctor.age > 20;
+});
+console.log(result);
+console.log(outcome);
+console.log(output);
 
