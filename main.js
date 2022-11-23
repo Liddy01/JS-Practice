@@ -1394,42 +1394,79 @@
 
 
 
-// Sorting and Reversimg
-const numbers = [6,8,7,2,1,9];
+// // Sorting and Reversimg
+// const numbers = [6,8,7,2,1,9];
 
-numbers.sort();
-numbers.reverse();
+// numbers.sort();
+// numbers.reverse();
 
-console.log(numbers);
+// console.log(numbers);
 
-let doctors = [
-    {name: 'Grace', age: 40},
-    {name: 'Jude', age: 30},
+// let doctors = [
+//     {name: 'Grace', age: 40},
+//     {name: 'Jude', age: 30},
 
-];
+// ];
 
-doctors.sort(function(d1,d2){
-    if (d1.age > d2.age) return +1;
-    if (d1.age === d2.age) return 0;
-    if (d1.age < d2.age) return -1;
-
-
-});
-console.log(doctors);
+// doctors.sort(function(d1,d2){
+//     if (d1.age > d2.age) return +1;
+//     if (d1.age === d2.age) return 0;
+//     if (d1.age < d2.age) return -1;
 
 
-
-let teachers = [
-    {name: 'Elvin', age: 50},
-    {name: 'Fred', age: 20},
-
-];
-
-teachers.sort(function(t1,t2){
-    if (t1.age > t2.age) return +1;
-    if (t1.age === t2.age) return 0;
-    if (t1.age < t2.age) return -1;
+// });
+// console.log(doctors);
 
 
-}).reverse();
-console.log(teachers);
+
+// let teachers = [
+//     {name: 'Elvin', age: 50},
+//     {name: 'Fred', age: 20},
+
+// ];
+
+// teachers.sort(function(t1,t2){
+//     if (t1.age > t2.age) return +1;
+//     if (t1.age === t2.age) return 0;
+//     if (t1.age < t2.age) return -1;
+
+
+// }).reverse();
+// console.log(teachers);
+
+
+
+
+
+
+// Testing the elements of Array
+
+// Array Method- every, some
+
+const numbers = [6,8,7,1,9];
+
+const data = numbers.every(function(num){
+    return num > 0;
+})
+console.log(data)
+
+
+const digits = [6,8,7,-1,9];
+
+const message = digits.every(function(dig){
+    return dig > 0;
+})
+console.log(message)
+
+
+const counts = [-6,-8,-7,-1,9];
+
+const output = counts.some(function(cout){
+    return cout > 0;
+})
+console.log(output)
+
+
+
+
+// Combining and Slicing the Array
