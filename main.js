@@ -1469,20 +1469,45 @@
 
 
 
-// Combining and Slicing the Array
+// // Combining and Slicing the Array
 
-// Array Method - concat, slice
+// // Array Method - concat, slice
+
+// const num1 = [1,2,3];
+// const num2 = [4,5,6,7];
+
+// const num = num1.concat(num2);
+// console.log(num);
+
+// const numbers = [1,2,3,4,5,6,7,8,9];
+// const sliceArray = numbers.slice(3,6);
+// console.log(sliceArray);
+
+// const myNum = num.concat(sliceArray);
+// console.log(myNum)
+
+
+
+
+
+// Spread Operator
+const numbers = [1,2,3,4,5,6,7,8];
+console.log(...numbers);
+console.log(numbers[0],numbers[1]);
+
+console.log(numbers[0],numbers[1],numbers[2],numbers[3],numbers[4],numbers[5]);
+
+console.log(numbers);
+
+
+const copiedArray = [...numbers];
+console.log(copiedArray);
 
 const num1 = [1,2,3];
-const num2 = [4,5,6,7];
+const num2 = [4,5,6];
+const num3 = [7,8,9];
 
-const num = num1.concat(num2);
+
+const num = [...num1, ...num2, ...num3]
 console.log(num);
-
-const numbers = [1,2,3,4,5,6,7,8,9];
-const sliceArray = numbers.slice(3,6);
-console.log(sliceArray);
-
-const myNum = num.concat(sliceArray);
-console.log(myNum)
 
