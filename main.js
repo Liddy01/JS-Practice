@@ -1443,30 +1443,46 @@
 
 // Array Method- every, some
 
-const numbers = [6,8,7,1,9];
+// const numbers = [6,8,7,1,9];
 
-const data = numbers.every(function(num){
-    return num > 0;
-})
-console.log(data)
-
-
-const digits = [6,8,7,-1,9];
-
-const message = digits.every(function(dig){
-    return dig > 0;
-})
-console.log(message)
+// const data = numbers.every(function(num){
+//     return num > 0;
+// })
+// console.log(data)
 
 
-const counts = [-6,-8,-7,-1,9];
+// const digits = [6,8,7,-1,9];
 
-const output = counts.some(function(cout){
-    return cout > 0;
-})
-console.log(output)
+// const message = digits.every(function(dig){
+//     return dig > 0;
+// })
+// console.log(message)
+
+
+// const counts = [-6,-8,-7,-1,9];
+
+// const output = counts.some(function(cout){
+//     return cout > 0;
+// })
+// console.log(output)
 
 
 
 
 // Combining and Slicing the Array
+
+// Array Method - concat, slice
+
+const num1 = [1,2,3];
+const num2 = [4,5,6,7];
+
+const num = num1.concat(num2);
+console.log(num);
+
+const numbers = [1,2,3,4,5,6,7,8,9];
+const sliceArray = numbers.slice(3,6);
+console.log(sliceArray);
+
+const myNum = num.concat(sliceArray);
+console.log(myNum)
+
