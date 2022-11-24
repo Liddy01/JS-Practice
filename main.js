@@ -1517,16 +1517,50 @@
 
 
 
-// Joining Array
+// // Joining Array
+
+// let numbers = [1,2,3,4];
+// let joinArray = numbers.join(' ');
+// let joinIndex = numbers.join('-');
+
+// console.log(joinArray);
+// console.log(joinIndex);
+
+// let message = 'Hi My name is Lydia';
+// const arrayMessage = message.split(' ');
+// console.log(arrayMessage.join('-'));
+
+
+
+
+// ES6 Features: Map
 
 let numbers = [1,2,3,4];
-let joinArray = numbers.join(' ');
-let joinIndex = numbers.join('-');
+let mulByTwo = [];
+for (let num of numbers){
+    mulByTwo.push(num * 2);
 
-console.log(joinArray);
-console.log(joinIndex);
+}
+console.log(mulByTwo);
 
-let message = 'Hi My name is Lydia';
-const arrayMessage = message.split(' ');
-console.log(arrayMessage.join('-'));
+                //  OR
+ let counts = [1,2,3,4];
 
+ const mulByThree = counts.map(function(count){
+    return count * 3;
+ })               
+console.log(mulByThree);
+
+// To make it as Array function
+let digits = [1,2,3,4];
+const mulByFour = digits.map((dig) => dig * 4);
+console.log(mulByFour);
+
+// let doctor = [
+//     {name: 'Lyia', age: 40},
+//     {name: 'Nenye', age: 30},
+//     {name: 'Lilly', age: 20},
+// ];
+
+// const doctors = doctor.map((doc) => doc.age);
+// console.log(docName);
