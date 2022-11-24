@@ -1475,8 +1475,10 @@
 
 // const num1 = [1,2,3];
 // const num2 = [4,5,6,7];
+// const num3 = [8,9,10,11];
 
-// const num = num1.concat(num2);
+
+// const num = num1.concat(num2).concat(num3);
 // console.log(num);
 
 // const numbers = [1,2,3,4,5,6,7,8,9];
@@ -1490,24 +1492,41 @@
 
 
 
-// Spread Operator
-const numbers = [1,2,3,4,5,6,7,8];
-console.log(...numbers);
-console.log(numbers[0],numbers[1]);
+// // Spread Operator
+// const numbers = [1,2,3,4,5,6,7,8];
+// console.log(...numbers);
+// console.log(numbers[0],numbers[1]);
 
-console.log(numbers[0],numbers[1],numbers[2],numbers[3],numbers[4],numbers[5]);
+// console.log(numbers[0],numbers[1],numbers[2],numbers[3],numbers[4],numbers[5]);
 
-console.log(numbers);
-
-
-const copiedArray = [...numbers];
-console.log(copiedArray);
-
-const num1 = [1,2,3];
-const num2 = [4,5,6];
-const num3 = [7,8,9];
+// console.log(numbers);
 
 
-const num = [...num1, ...num2, ...num3]
-console.log(num);
+// const copiedArray = [...numbers];
+// console.log(copiedArray);
+
+// const num1 = [1,2,3];
+// const num2 = [4,5,6];
+// const num3 = [7,8,9];
+
+
+// const num = [...num1, ...num2, ...num3]
+// console.log(num);
+
+
+
+
+
+// Joining Array
+
+let numbers = [1,2,3,4];
+let joinArray = numbers.join(' ');
+let joinIndex = numbers.join('-');
+
+console.log(joinArray);
+console.log(joinIndex);
+
+let message = 'Hi My name is Lydia';
+const arrayMessage = message.split(' ');
+console.log(arrayMessage.join('-'));
 
