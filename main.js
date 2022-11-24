@@ -1533,7 +1533,7 @@
 
 
 
-// ES6 Features: Map
+// ES6 Features: Mapping an Array
 
 // let numbers = [1,2,3,4];
 // let mulByTwo = [];
@@ -1556,16 +1556,59 @@
 // const mulByFour = digits.map((dig) => dig * 4);
 // console.log(mulByFour);
 
-let doctor = [
-    {name: 'Lyia', age: 40},
-    {name: 'Nenye', age: 30},
-    {name: 'Lilly', age: 20},
-];
+// let doctor = [
+//     {name: 'Lyia', age: 40},
+//     {name: 'Nenye', age: 30},
+//     {name: 'Lilly', age: 20},
+// ];
 
-const docName = doctor.map((doc) => doc.name);
-const docAge = doctor.map((doc) => doc.age);
+// const docName = doctor.map((doc) => doc.name);
+// const docAge = doctor.map((doc) => doc.age);
 
-console.log(docName);
-console.log(docAge);
+// console.log(docName);
+// console.log(docAge);
+
+
+
+
+
+// ES6 Features: Filtering an Array
+
+// let numbers = [1,2,3,4,5,6];
+
+// let onlyOddNumbers = [];
+
+// for (let num of numbers){
+//     if(num % 2 == 1){
+//         onlyOddNumbers.push(num)
+//     }
+// }
+// console.log(onlyOddNumbers);
+
+// // To get only even numbers
+// let counts = [1,2,3,4,5,6];
+
+// let onlyEvenNumbers = [];
+
+// for (let count of counts){
+//     if(count % 2 !== 1){
+//         onlyEvenNumbers.push(count)
+//     }
+// }
+// console.log(onlyEvenNumbers);
+
+
+// Using filter Method
+let numbers = [1,2,3,4,5,6]
+const onlyOddNumbers = numbers.filter(function(num){
+    return num % 2 === 1;
+}) 
+console.log(onlyOddNumbers);
+
+const onlyEvenNumbers = numbers.filter(function(num){
+    return num % 2 !== 1;
+}) 
+console.log(onlyEvenNumbers);
+
 
 
