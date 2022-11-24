@@ -1599,16 +1599,37 @@
 
 
 // Using filter Method
-let numbers = [1,2,3,4,5,6]
-const onlyOddNumbers = numbers.filter(function(num){
-    return num % 2 === 1;
-}) 
-console.log(onlyOddNumbers);
+// let numbers = [1,2,3,4,5,6]
+// const onlyOddNumbers = numbers.filter(function(num){
+//     return num % 2 === 1;
+// }) 
+// console.log(onlyOddNumbers);
 
-const onlyEvenNumbers = numbers.filter(function(num){
-    return num % 2 !== 1;
-}) 
-console.log(onlyEvenNumbers);
+// const onlyEvenNumbers = numbers.filter(function(num){
+//     return num % 2 !== 1;
+// }) 
+// console.log(onlyEvenNumbers);
+
+
+
+
+
+
+// ES6 Feature : Reducing an Array
+
+let numbers = [10,20,30];
+
+let sum = 0;
+for (let num of numbers){
+    sum = sum + num;
+}
+console.log(sum);
+
+const ReduceSum = numbers.reduce(function(sum,num){
+    return sum + num;
+},0);
+console.log(ReduceSum); 
+
 
 
 
