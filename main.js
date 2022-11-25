@@ -1637,19 +1637,41 @@
 
 // ES6 Feature : Array and Object Destructuring
 
+// function greeting(user){
+//     console.log(`Hello ${user.name} and age ${user.age} form ${user.address.long}, ${user.address.lat}` );
+// } 
+// const user = {
+//     name: 'Gift',
+//     age: 20,
+//     address : {
+//         long: 343.4,
+//         lat: 243.4,
+
+//     },
+// };
+
+// greeting(user);
+
+// How to destructure
+
 function greeting(user){
-    console.log(`Hello ${user.name} and age ${user.age} form ${user.address.long}, ${user.address.lat}` );
-} 
+    const{name, age, address} = user;
+    const{long,lat} = address; 
+    console.log(`Hello ${name} and age ${age} form ${long}, ${lat}` ); 
+}
 const user = {
-    name: 'Gift',
-    age: 20,
-    address : {
-        long: 343.4,
-        lat: 243.4,
-
-    },
-};
-
+        name: 'Gift',
+        age: 20,
+        address : {
+            long: 343.4,
+            lat: 243.4,
+    
+        },
+    };
 greeting(user);
 
+
+
+let numbers = [a,b,c,d] = [1,2,3,4]
+console.log(a,b,c,d);
 
