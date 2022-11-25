@@ -1617,19 +1617,39 @@
 
 // ES6 Feature : Reducing an Array
 
-let numbers = [10,20,30];
+// let numbers = [10,20,30];
 
-let sum = 0;
-for (let num of numbers){
-    sum = sum + num;
-}
-console.log(sum);
+// let sum = 0;
+// for (let num of numbers){
+//     sum = sum + num;
+// }
+// console.log(sum);
 
-const ReduceSum = numbers.reduce(function(sum,num){
-    return sum + num;
-},0);
-console.log(ReduceSum); 
+// const ReduceSum = numbers.reduce(function(sum,num){
+//     return sum + num;
+// },0);
+// console.log(ReduceSum); 
 
 
+
+
+
+
+// ES6 Feature : Array and Object Destructuring
+
+function greeting(user){
+    console.log(`Hello ${user.name} and age ${user.age} form ${user.address.long}, ${user.address.lat}` );
+} 
+const user = {
+    name: 'Gift',
+    age: 20,
+    address : {
+        long: 343.4,
+        lat: 243.4,
+
+    },
+};
+
+greeting(user);
 
 
