@@ -1703,3 +1703,45 @@ set.forEach((el) => console.log(el));
 
 set.clear();
 console.log(set);
+
+
+
+
+
+
+
+
+
+// ES6 Data Structure : Map
+
+let map = new Map();
+
+map.set('Orange', 'Lemu');
+map.set('Banana', 'Ayaba');
+map.set('score', 100);
+console.log(map);
+
+for (let element of map){
+    console.log(element)
+}
+
+console.log(map.has('Orange'));
+console.log(map.has('Mango'));
+
+map.delete('Banana');
+console.log(map);
+
+console.log(map.values());
+console.log(map.keys());
+
+map.clear();
+console.log(map);
+
+
+
+
+
+
+
+
+
